@@ -1,0 +1,32 @@
+//new2
+7 addAction !CQC !STR_A3_Arsenal !_priority !FN_SHOW
+7 createDialog !CQC !RscGUIEditor !=DisplayProgress !=DisplayNotificationSender !FN_SHOW !RscDisplayMPScoreTable
+7 ctrlCreate !CQC !DLC !inheritsfrom !="[ \"RscControlsGroupNoHScrollbars\", 1000, _ctrlTemplate  ];" !"Display 0 displayCtrl 3107182" !FN_SHOW !RscMessageBox !RscDisplayMPScoreTable !ctrlButtonFilter
+7 ctrlDelete !CQC !DLC !=_ListGroup !_restrictedCtrls !"Display 0 displayCtrl 3107182" !FN_SHOW !RscMessageBox
+7 hint !A3\\ !a3\\ !BIS_fnc !"Where are you going?" !sabled !_arrow !Jonas !CQC
+7 removeAllActions
+7 removeAllEventHandlers
+7 removeAllMissionEventHandlers
+7 removeAllMPEventHandlers
+7 removeAllMusicEventHandlers
+7 removeAllUserActionEventHandlers
+7 forceWeaponFire
+7 forceRespawn
+7 forceWalk
+7 addMusicEventHandler
+7 ctrlRemoveAllEventHandlers
+7 disableCollisionWith
+7 W_O_O_K_I_E
+7 E_X_T_A_S_Y
+7 DO_NUKE
+7 JxMxE
+7 llyyssttiiccc
+7 J_M_E_
+7 aNUScODERZ
+7 Jesus
+7 JJJJ_
+7 ThirtySix
+7 root_
+7 E5P
+7 Bossmode
+7 BIS_fnc_AAN !BIS_fnc_configviewer

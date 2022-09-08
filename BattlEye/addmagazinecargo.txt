@@ -1,0 +1,19 @@
+//regex
+7 "" !570x28 !9x21 !45ACP !762x39 !762x51 !762x54 !65x39 !556x45 !580x42 !12Gauge !50BW !650x39 !93x64 !127x54 !338
+7 3Rnd
+7 4Rnd
+7 6Rnd !12Gauge !9x21 !45ACP
+7 8Rnd
+7 12Rnd
+7 24Rnd
+7 32Rnd
+7 64Rnd
+7 450Rnd
+7 500Rnd
+7 1000Rnd
+7 2000Rnd
+7 5000Rnd
+7 RPG
+7 NLAW
+7 Titan
+7 MRAWS

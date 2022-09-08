@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Grand Theft ArmA CQC">
+	<Package name="CQC_Strings">
+		<Container name="GUI">	
+			<Container name="Displays">
+				<Container name="displaySelectArena">
+					<Key ID="STR_CQC_displaySelectArena_Title">
+						<English>Select Arena</English>
+					</Key>
+					<Key ID="STR_CQC_displaySelectArena_Tab_Main">
+						<English>CQC Arenas</English>
+					</Key>
+					<Key ID="STR_CQC_displaySelectArena_Tab_AirTank">
+						<English>Air Tank</English>
+					</Key>
+					<Key ID="STR_CQC_displaySelectArena_NoteStatus_canSpawn">
+						<English>Ready to Spawn!!!</English>
+					</Key>
+					<Key ID="STR_CQC_displaySelectArena_NoteStatus_cantSpawn">
+						<English>You have restricted items for this arena. Remove them to spawn!!!</English>
+					</Key>
+				</Container>	
+			</Container>
+		</Container>
+	</Package>
+</Project>	

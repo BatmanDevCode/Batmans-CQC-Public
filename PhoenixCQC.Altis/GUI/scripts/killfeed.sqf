@@ -1,0 +1,57 @@
+#include "script_component.hpp"
+
+#define SELF                CQC_hud_script
+#define HUD_DRAW3D_HANDLE   CQC_hud_draw3DHandler
+#define COLOUR_ORANGE       [0.84, 0.39, 0, 0.75]
+#define COLOUR_RED          [0.69, 0.01, 0, 0.75]
+
+disableSerialization;
+
+params [
+    ["_event", "", [""]],
+    ["_args", []]
+];
+
+switch _event do {
+    case "onLoad": {
+        _args params [["_display", displayNull, [displayNull]]];
+
+        HUD_DRAW3D_HANDLE = addMissionEventHandler ["Draw3D", {["hudDraw3D", []] call SELF}];
+
+    };
+    
+    case "hudDraw3D": {
+        _display = uiNamespace getVariable ["CQC_hud", displayNull];
+        private _ctrlHudGroup = _display displayCtrl IDC_HUD_GROUP;
+
+        (_ctrlHudGroup controlsGroupCtrl IDC_HUD_HEALTHBAR) progressSetPosition (1 - damage player);
+        (_ctrlHudGroup controlsGroupCtrl IDC_HUD_HEALTHPERCENTAGE) ctrlSetText format ["%1%2", round ((1 - damage player) * 100), "%"];
+
+        _kills = player getVariable "Batman_CQC_KD_Kills_G2";
+        _deaths = player getVariable "Batman_CQC_KD_Deaths_G2";
+        _kdratio = parseNumber ((_kills / _deaths) toFixed 2);
+        
+        (_ctrlHudGroup controlsGroupCtrl IDC_HUD_K) ctrlSetText format ["%1", _kills];
+        (_ctrlHudGroup controlsGroupCtrl IDC_HUD_D) ctrlSetText format ["%1", _deaths];
+        (_ctrlHudGroup controlsGroupCtrl IDC_HUD_KD) ctrlSetText format ["%1", _kdratio];
+
+        if (diag_frameno % 30 == 0) then {
+            private _damage = 1 - (damage player);
+
+            if (_damage < 0.25) then {
+                (_ctrlHudGroup controlsGroupCtrl IDC_HUD_HEALTHBAR) ctrlSetTextColor COLOUR_RED;
+            } else {
+                if (_damage < 0.5) then {
+                    (_ctrlHudGroup controlsGroupCtrl IDC_HUD_HEALTHBAR) ctrlSetTextColor COLOUR_ORANGE;
+                } else {
+                    (_ctrlHudGroup controlsGroupCtrl IDC_HUD_HEALTHBAR) ctrlSetTextColor [0.1, 0.1, 0.1, 0.75];
+                };
+            };
+        };
+    };
+
+    case "onUnload": {
+        removeMissionEventHandler ["Draw3D", HUD_DRAW3D_HANDLE];
+        HUD_DRAW3D_HANDLE = nil;
+    };
+};

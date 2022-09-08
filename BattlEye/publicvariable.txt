@@ -1,0 +1,2 @@
+//regex
+7 "" !admin_ !=SL_fn_jumpOverAnim !PVAHR_ !PVAH_ !AHKickLog_
