@@ -28,7 +28,7 @@ sleep 0.25;
 
 [
     format[
-    "<t size='1.3' color='#00C10D'>Thanks For Playing!</t><br/>See You Soon %1 ! <br/><t size='1.1'>You Top Fragger!</t>", name player],
+    "<t size='1.3' color='#00C10D'>Thanks For Playing!</t><br/>See You Soon %1 ! <br/><t size='1.1'>Discord.gg/NZB6Dj5</t>", name player],
     0,
     0.2,
     10,
