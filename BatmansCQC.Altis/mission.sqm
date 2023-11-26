@@ -613,7 +613,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="CQC";
+		briefingName="Batmans CQC";
 		resistanceWest=0;
 		startWeather=0.45498487;
 		startWind=0;
