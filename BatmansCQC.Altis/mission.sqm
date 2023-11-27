@@ -104508,7 +104508,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="this setVariable[""persistent"",true]; VA = [this] execVM ""Functions\Arsenal\ItemsAllowed.sqf""; [this] call CQC_fnc_addVendorActions; this setObjectTextureGlobal [0,""Data\Textures\sign.paa""]; this setVariable [""CQC_tags_Init"", 1, true];  " \n "this setVariable [""CQC_tags_Title"", ""Grand Theft Arma CQC"", true];  " \n "this setVariable [""CQC_tags_TitleColour"", [0,0.8,0,1], true];  " \n "this setVariable [""CQC_tags_Subtitle"", ""Scroll Wheel Here"", true];  " \n "this setVariable [""CQC_tags_SubtitleColour"", [0.9,0.9,0.9,1], true];  " \n "this setVariable [""CQC_tags_Icon"", ""Data\Icons\g_red.paa"", true];";
+						init="this setVariable[""persistent"",true]; VA = [this] execVM ""Functions\Arsenal\ItemsAllowed.sqf""; [this] call CQC_fnc_addVendorActions; this setObjectTextureGlobal [0,""Data\Textures\sign.paa""]; this setVariable [""CQC_tags_Init"", 1, true];  " \n "this setVariable [""CQC_tags_Title"", ""Batmans CQC"", true];  " \n "this setVariable [""CQC_tags_TitleColour"", [0,0.8,0,1], true];  " \n "this setVariable [""CQC_tags_Subtitle"", ""Scroll Wheel Here"", true];  " \n "this setVariable [""CQC_tags_SubtitleColour"", [0.9,0.9,0.9,1], true];  " \n "this setVariable [""CQC_tags_Icon"", ""Data\Icons\g_red.paa"", true];";
 						disableSimulation=1;
 					};
 					id=18224;
@@ -104569,7 +104569,7 @@ class Mission
 					side="Empty";
 					class Attributes
 					{
-						init="this setVariable[""persistent"",true]; VA = [this] execVM ""Functions\Arsenal\ItemsAllowed.sqf""; [this] call CQC_fnc_addVendorActions; this setObjectTextureGlobal [0,""Data\Textures\sign.paa""]; this setVariable [""CQC_tags_Init"", 1, true];  " \n "this setVariable [""CQC_tags_Title"", ""Grand Theft Arma CQC"", true];  " \n "this setVariable [""CQC_tags_TitleColour"", [0,0.8,0,1], true];  " \n "this setVariable [""CQC_tags_Subtitle"", ""Scroll Wheel Here"", true];  " \n "this setVariable [""CQC_tags_SubtitleColour"", [0.9,0.9,0.9,1], true];  " \n "this setVariable [""CQC_tags_Icon"", ""Data\Icons\g_red.paa"", true];";
+						init="this setVariable[""persistent"",true]; VA = [this] execVM ""Functions\Arsenal\ItemsAllowed.sqf""; [this] call CQC_fnc_addVendorActions; this setObjectTextureGlobal [0,""Data\Textures\sign.paa""]; this setVariable [""CQC_tags_Init"", 1, true];  " \n "this setVariable [""CQC_tags_Title"", ""Batmans Arma CQC"", true];  " \n "this setVariable [""CQC_tags_TitleColour"", [0,0.8,0,1], true];  " \n "this setVariable [""CQC_tags_Subtitle"", ""Scroll Wheel Here"", true];  " \n "this setVariable [""CQC_tags_SubtitleColour"", [0.9,0.9,0.9,1], true];  " \n "this setVariable [""CQC_tags_Icon"", ""Data\Icons\g_red.paa"", true];";
 						disableSimulation=1;
 					};
 					id=18228;

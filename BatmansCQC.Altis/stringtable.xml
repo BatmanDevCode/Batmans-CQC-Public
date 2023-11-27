@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project name="Grand Theft ArmA CQC">
+<Project name="Batmans CQC CQC">
 	<Package name="CQC_Strings">
 		<Container name="GUI">	
 			<Container name="Displays">
